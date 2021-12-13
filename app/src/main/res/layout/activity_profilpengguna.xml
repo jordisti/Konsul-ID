@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#f0f0f0"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_collapseMode="pin"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout android:layout_width="match_parent"
+            android:background="#f0f0f0"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:padding="15dp">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:id="@+id/images"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/artikel"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/nama"
+                    android:layout_toRightOf="@+id/images"
+                    android:layout_marginLeft="10dp"
+                    android:text="Nama"
+                    android:layout_marginTop="20dp"
+                    android:textColor="#000"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/kontak"
+                    android:layout_toRightOf="@+id/images"
+                    android:layout_below="@+id/nama"
+                    android:layout_marginLeft="10dp"
+                    android:text="0-98219382"
+                    android:textColor="#000"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:layout_margin="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/a"
+                    android:text="Akun"
+                    android:padding="15dp"
+                    android:textStyle="bold"
+                    android:background="#fafafa"
+                    android:drawableBottom="@drawable/borderbottom"
+                    android:textColor="#000"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/profils"
+                    android:layout_below="@+id/a"
+                    android:padding="15dp"
+                    android:text="Profil Saya"
+                    android:drawableRight="@drawable/kanan"
+                    android:textColor="#000"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ubahkatasandi"
+                    android:layout_below="@+id/profils"
+                    android:padding="15dp"
+                    android:text="Ubah Kata Sandi"
+                    android:drawableRight="@drawable/kanan"
+                    android:textColor="#000"
+                    />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:layout_margin="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/b"
+                    android:text="Aktifitas Saya"
+                    android:padding="15dp"
+                    android:textStyle="bold"
+                    android:background="#fafafa"
+                    android:drawableBottom="@drawable/borderbottom"
+                    android:textColor="#000"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/riwayat"
+                    android:layout_below="@+id/b"
+                    android:padding="15dp"
+                    android:text="Riwayat Konsultasi"
+                    android:drawableRight="@drawable/kanan"
+                    android:textColor="#000"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/riwayatjanji"
+                    android:layout_below="@+id/riwayat"
+                    android:padding="15dp"
+                    android:text="Riwayat Janjian"
+                    android:drawableRight="@drawable/kanan"
+                    android:textColor="#000"
+                    />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:layout_margin="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/c"
+                    android:text="Aplikasi KONSULID"
+                    android:padding="15dp"
+                    android:textStyle="bold"
+                    android:background="#fafafa"
+                    android:drawableBottom="@drawable/borderbottom"
+                    android:textColor="#000"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tentang"
+                    android:layout_below="@+id/c"
+                    android:padding="15dp"
+                    android:text="Tentang Aplikasi"
+                    android:drawableRight="@drawable/kanan"
+                    android:textColor="#000"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/faq"
+                    android:layout_below="@+id/tentang"
+                    android:padding="15dp"
+                    android:text="FAQ"
+                    android:drawableRight="@drawable/kanan"
+                    android:textColor="#000"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:layout_margin="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/logout"
+                    android:text="Keluar"
+                    android:textAlignment="center"
+                    android:padding="15dp"
+                    android:textStyle="bold"
+                    android:background="#fafafa"
+                    android:drawableBottom="@drawable/borderbottom"
+                    android:textColor="#000"
+                    />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

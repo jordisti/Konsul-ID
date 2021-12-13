@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_weight="0.02">
+
+        <TextView
+            android:text="1"
+            android:layout_width="145dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/idnya"
+            android:layout_weight="0.04"
+            android:textColor="@color/bg_main"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:textAlignment="textEnd"
+            android:visibility="gone" />
+
+        <TextView
+            android:text="1001"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/namanya"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/idnya"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="10dp" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView14"
+            android:layout_below="@+id/namanya"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/input_login" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/namanya"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/textView22"
+            android:textColor="@color/input_login_hint" />
+
+    </RelativeLayout>
+</LinearLayout>

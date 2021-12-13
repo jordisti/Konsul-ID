@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_collapseMode="pin"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/a"
+            android:text="Bagaimana cara berkonsultasi dengan dokter?"
+            android:background="#4CAF50"
+            android:textSize="14dp"
+            android:padding="5dp"
+            android:textColor="#fff"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/b"
+            android:text="Setelah anda masuk, silahkan ke menu konsultasi dan cari dokter/spesialis pilihan anda sesuai kebutuhan"
+            android:textSize="14dp"
+            android:padding="15dp"
+            android:layout_below="@+id/a"
+            android:textColor="#000"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/c"
+            android:text="Bagaimana proses pembayaran untuk konsultasi dengan dokter/spesialis?"
+            android:background="#4CAF50"
+            android:textSize="14dp"
+            android:padding="5dp"
+            android:textColor="#fff"
+            android:layout_below="@+id/b"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/d"
+            android:text="Proses pembayaran di KONSULID tersedia pembayaran debit, pembayaran transfer bank dan pembayaran gopay"
+            android:textSize="14dp"
+            android:padding="15dp"
+            android:layout_below="@+id/c"
+            android:textColor="#000"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/e"
+            android:text="Berapa lama proses konsultasi?"
+            android:background="#4CAF50"
+            android:textSize="14dp"
+            android:padding="5dp"
+            android:textColor="#fff"
+            android:layout_below="@+id/d"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/f"
+            android:text="Proses konsultasi dibatasi jam sesuai permintaan dari klien, sehingga anda dapat bertanya apapun terkait kesehatan yang anda rasakan"
+            android:textSize="14dp"
+            android:padding="15dp"
+            android:layout_below="@+id/e"
+            android:textColor="#000"/>
+
+    </RelativeLayout>
+</LinearLayout>

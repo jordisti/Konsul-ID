@@ -1,0 +1,67 @@
+<resources>
+    <string name="app_name">Konsulitasi ID</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="str_atv_places">Enter Place Here</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_name">Nama</string>
+    <string name="hint_username">Username</string>
+    <string name="btn_login">LOGIN</string>
+    <string name="btn_register">REGISTER</string>
+    <string name="btn_link_to_register">Belum Punya Akun? Register.</string>
+    <string name="btn_link_to_login">Sudah ada akun. Login.</string>
+    <string name="welcome">Welcome</string>
+    <string name="btn_logout">LOGOUT</string>
+    <string name="name">Fullname</string>
+
+    <string name="title_shop">Shop</string>
+    <string name="title_gifts">Gifts</string>
+    <string name="title_cart">Cart</string>
+    <string name="title_profile">Profile</string>
+
+    <drawable name="actionbar_background">#fff</drawable>
+    <color name="color_title">#000000</color>
+
+    <string name="err_msg_name">Masukan Posisi Anda</string>
+    <string name="err_msg_tujuan">Masukan Tujuan Anda</string>
+    <string name="err_msg_tgl">Pilih Tanggal</string>
+
+
+    <array name="tab_name">
+        <item>Terendah</item>
+        <item>Tertinggi</item>
+    </array>
+
+    <array name="tab_pop">
+        <item>Terendah</item>
+        <item>Termahal</item>
+    </array>
+
+    <array name="tab_pops">
+        <item>Psikolog</item>
+        <item>Psikiater</item>
+    </array>
+
+    <string name="title_activity_welcome">Home Screen</string>
+    <string name="next">LANJUT</string>
+    <string name="skip">LEWATI</string>
+    <string name="start">MULAI</string>
+
+    <string name="slide_1_title">KONSULTASI</string>
+    <string name="slide_1_desc">Konsultasikan keluhan kamu dengan dokter pilihan kami</string>
+
+    <string name="slide_2_title">ARTIKEL</string>
+    <string name="slide_2_desc">Temukan artikel terkait kesehatan dan keluhan yang kamu rasakan</string>
+
+    <string name="slide_3_title">BUAT JANJI</string>
+    <string name="slide_3_desc">Buat Janji langsung dengan dokter kesayangan kamu</string>
+
+    <string name="slide_4_title">FORUM</string>
+    <string name="slide_4_desc">Cari forum diskusi dari pertanyaan-pertanyaan pengguna lain yang punya masalah yang sama dengan kamu </string>
+
+</resources>

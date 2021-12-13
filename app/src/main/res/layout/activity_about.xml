@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_collapseMode="pin"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp">
+
+        <TextView
+            android:text="Design By Jordan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView20"
+            android:textAlignment="center"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/a"
+            android:text="KONSULID"
+            android:textSize="18dp"
+            android:textColor="#000"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/b"
+            android:text="Jalan Gatot Subroto, Jakarta Pusat"
+            android:textSize="18dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/a"
+            android:textColor="#000"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/c"
+            android:text="Kontak"
+            android:textSize="18dp"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/b"
+            android:textColor="#000"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/d"
+            android:text="+62 811 9828 2827"
+            android:layout_marginTop="5dp"
+            android:textSize="18dp"
+            android:layout_below="@+id/c"
+            android:textColor="#000"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/e"
+            android:text="Kritik dan Saran"
+            android:layout_marginTop="50dp"
+            android:textSize="18dp"
+            android:gravity="center_horizontal"
+            android:layout_below="@+id/d"
+            android:textColor="#000"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/nama"
+            android:layout_below="@+id/e"
+            android:hint="Nama"
+            android:focusable="false"
+            android:layout_marginTop="20dp"
+            android:layout_margin="10dp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/email"
+            android:layout_below="@+id/nama"
+            android:hint="Email"
+            android:layout_marginTop="20dp"
+            android:layout_margin="10dp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/pesan"
+            android:layout_below="@+id/email"
+            android:hint="Pesan"
+            android:layout_marginTop="20dp"
+            android:layout_margin="10dp"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/simpan"
+            android:layout_below="@+id/pesan"
+            android:text="Kirim"
+            android:layout_margin="10dp"
+            android:textColor="#fff"
+            android:background="@drawable/bulattombol"/>
+    </RelativeLayout>
+</LinearLayout>

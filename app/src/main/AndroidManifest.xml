@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.appwxx.konsulid">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true"/>
+
+    <application
+        android:name="com.appwxx.konsulid.app.AppController"
+        android:allowBackup="true"
+        android:icon="@drawable/logoid"
+        android:roundIcon="@drawable/logoid"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Appmakan.NoActionBar"
+        android:networkSecurityConfig="@xml/network_security_config">
+        <uses-library android:name="org.apache.http.legacy" android:required="false" />
+        <activity android:name="com.appwxx.konsulid.welcome">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.appwxx.konsulid.login"
+            android:label="@string/app_name"
+            android:theme="@style/Appmakan.NoActionBar">
+        </activity>
+        <activity
+            android:name="com.appwxx.konsulid.register"
+            android:label="@string/app_name"
+            android:theme="@style/Appmakan.NoActionBar">
+        </activity>
+        <activity
+            android:name="com.appwxx.konsulid.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name="com.appwxx.konsulid.artikel"
+            android:label="Pencarian Artikel Kesehatan"
+            android:theme="@style/Appmakan.NoActionBar">
+        </activity>
+        <activity
+            android:name="com.appwxx.konsulid.konsultasi"
+            android:label="Konsultasi Dengan Dokter Kami"
+            android:theme="@style/Appmakan.NoActionBar">
+        </activity>
+        <activity
+            android:name="com.appwxx.konsulid.riwayatchat"
+            android:label="Rekap Konsultasi"
+            android:theme="@style/Appmakan.NoActionBar">
+        </activity>
+        <activity
+            android:name="com.appwxx.konsulid.detailjanjian"
+            android:label="Buat Janji"
+            android:theme="@style/Appmakan.NoActionBar">
+        </activity>
+        <activity
+            android:name="com.appwxx.konsulid.riwayatjanjianketemu"
+            android:label="Riwayat Janjian Ketemu"
+            android:theme="@style/Appmakan.NoActionBar">
+        </activity>
+        <activity
+            android:name="com.appwxx.konsulid.forum"
+            android:label="Forum Diskusi"
+            android:theme="@style/Appmakan.NoActionBar">
+        </activity>
+        <activity
+            android:name="com.appwxx.konsulid.buatforum"
+            android:label="Buat Forum"
+            android:theme="@style/Appmakan.NoActionBar">
+        </activity>
+        <activity
+            android:name="com.appwxx.konsulid.forumdetail"
+            android:label="Detail Forum"
+            android:theme="@style/Appmakan.NoActionBar">
+        </activity>
+        <activity
+            android:name="com.appwxx.konsulid.daftarkonsultasi"
+            android:label="Daftar Konsultasi"
+            android:theme="@style/Appmakan.NoActionBar">
+        </activity>
+        <activity
+            android:name="com.appwxx.konsulid.daftarjanjian"
+            android:label="Daftar Janjian"
+            android:theme="@style/Appmakan.NoActionBar">
+        </activity>
+        <activity
+            android:name="com.appwxx.konsulid.faq"
+            android:label="FAQ"
+            android:theme="@style/Appmakan.NoActionBar">
+        </activity>
+        <activity
+            android:name="com.appwxx.konsulid.buatjanji"
+            android:label="Yuk Buat Janji"
+            android:theme="@style/Appmakan.NoActionBar">
+        </activity>
+        <activity
+            android:name="com.appwxx.konsulid.riwayatjanjian"
+            android:label="Riwayat"
+            android:theme="@style/Appmakan.NoActionBar">
+        </activity>
+        <activity
+            android:name="com.appwxx.konsulid.detail"
+            android:label="Detail"
+            android:theme="@style/Appmakan.NoActionBar">
+        </activity>
+        <activity
+            android:name="com.appwxx.konsulid.bayartransfer"
+            android:label="Konfirmasi Pembayaran"
+            android:theme="@style/Appmakan.NoActionBar">
+        </activity>
+        <activity
+            android:name="com.appwxx.konsulid.detailartikel"
+            android:label="Detail"
+            android:theme="@style/Appmakan.NoActionBar">
+        </activity>
+        <activity
+            android:name="com.appwxx.konsulid.riwayatkonsultasi"
+            android:label="Riwayat"
+            android:theme="@style/Appmakan.NoActionBar">
+        </activity>
+
+        <activity
+            android:name="com.appwxx.konsulid.profilpengguna"
+            android:label="Profil Pengguna"
+            android:theme="@style/Appmakan.NoActionBar">
+        </activity>
+
+        <activity
+            android:name="com.appwxx.konsulid.chat"
+            android:label="Chatting"
+            android:theme="@style/Appmakan.NoActionBar">
+        </activity>
+
+        <activity
+            android:name="com.appwxx.konsulid.ratingdokter"
+            android:label="Review"
+            android:theme="@style/Appmakan.NoActionBar">
+        </activity>
+
+        <activity
+            android:name="com.appwxx.konsulid.pengguna"
+            android:label="Profil Saya"
+            android:theme="@style/Appmakan.NoActionBar">
+        </activity>
+        <activity
+            android:name="com.appwxx.konsulid.ubahsandi"
+            android:label="Ubah Sandi"
+            android:theme="@style/Appmakan.NoActionBar">
+        </activity>
+        <activity
+            android:name="com.appwxx.konsulid.tentang"
+            android:label="Tentang Aplikasi"
+            android:theme="@style/Appmakan.NoActionBar">
+        </activity>
+        <activity
+            android:name="com.appwxx.konsulid.lupapassword"
+            android:label="Lupa Password"
+            android:theme="@style/Appmakan.NoActionBar">
+        </activity>
+
+    </application>
+
+
+</manifest>

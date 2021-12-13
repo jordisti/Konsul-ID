@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colormakan"
+        android:theme="@style/GalaxyZooThemeToolbarDarkOverflow"
+        app:popupTheme="@style/Theme.AppCompat.NoActionBar" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+        <TextView
+            android:text="Perbarui Data Anda"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:id="@+id/textView8"
+            android:layout_below="@+id/editText"
+            android:textColor="#000"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp" />
+
+        <Button
+            android:text="Perbarui Data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ubah"
+            android:background="@drawable/bulattombol"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="50dp"
+            android:layout_below="@+id/password"
+            android:textColor="#fff" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:layout_below="@+id/textView18"
+            android:id="@+id/alamat"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:background="@drawable/bulat"
+            android:hint="alamat"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:text="Alamat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:id="@+id/textView18"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/editText2"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/editText2"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bulat"
+            android:hint="kontak"
+            android:textColor="#000"
+            android:layout_below="@+id/textView16"/>
+
+        <TextView
+            android:text="Kontak"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView16"
+            android:textAlignment="center"
+            android:layout_alignTop="@+id/textView8"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="21dp"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:text="Email"
+            android:textAlignment="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/alamat"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentStart="true"
+            android:id="@+id/textView6"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:text="Password"
+            android:textAlignment="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/harga"
+            android:visibility="gone"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentStart="true"
+            android:id="@+id/textView11"
+            android:layout_alignParentEnd="true" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:layout_below="@+id/textView11"
+            android:layout_marginTop="10dp"
+            android:id="@+id/password"
+            android:visibility="gone"
+            android:padding="10dp"
+            android:background="@drawable/bulat"
+            android:hint="Password" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/harga"
+            android:hint="Email"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:background="@drawable/bulat"
+            android:textColor="@android:color/black"
+            android:layout_below="@+id/textView6" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/editText"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:paddingLeft="20dp"
+            android:background="@drawable/bulat" />
+
+        <Button
+            android:text="Keluar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/keluar"
+            android:padding="10dp"
+            android:visibility="gone"
+            android:layout_below="@+id/ubah"
+            android:background="@drawable/bulatwarna"
+            android:layout_marginBottom="20dp"
+            android:textColor="#000" />
+    </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

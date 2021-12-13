@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:text="1"
+            android:layout_width="145dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/idAkun"
+            android:layout_weight="0.04"
+            android:textColor="@color/bg_main"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:textAlignment="textEnd"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:id="@+id/kategoriakun"
+            android:layout_below="@+id/nameProduk"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:text="Kas "
+            android:layout_width="371dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/nameProduk"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:layout_below="@+id/kdAkun"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:text="Rp. 0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/nameProduk"
+            android:id="@+id/saldo"
+            android:textColor="@color/btn_login"
+            android:textAlignment="textEnd"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@+id/kdAkun" />
+
+        <TextView
+            android:text="1001"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/kdAkun"
+            android:textColor="@color/grey"
+            android:textSize="14sp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+
+</LinearLayout>

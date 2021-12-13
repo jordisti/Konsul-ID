@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:popupTheme="@style/Theme.AppCompat.NoActionBar" />
+
+
+        <LinearLayout android:layout_width="match_parent"
+            android:background="#f0f0f0"
+            android:orientation="vertical"
+            android:layout_below="@+id/toolbar"
+            android:layout_above="@+id/komentar"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:layout_margin="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/cs"
+                    android:text="Dibuat Oleh"
+                    android:padding="15dp"
+                    android:textStyle="bold"
+                    android:layout_toLeftOf="@+id/tanggal"
+                    android:background="#DBDBDB"
+                    android:drawableBottom="@drawable/borderbottom"
+                    android:textColor="#000"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tanggal"
+                    android:text="tanggal"
+                    android:padding="15dp"
+                    android:layout_alignParentRight="true"
+                    android:textStyle="bold"
+                    android:background="#DBDBDB"
+                    android:drawableBottom="@drawable/borderbottom"
+                    android:textColor="#000"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Dibuat oleh"
+                    android:id="@+id/x"
+                    android:layout_marginLeft="15dp"
+                    android:layout_below="@+id/cs"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="15dp"
+                    android:textColor="#1F1F1F"
+                    android:textSize="18dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Judul"
+                    android:id="@+id/judul"
+                    android:layout_below="@+id/x"
+                    android:textColor="#000"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="20dp"
+                    android:textSize="14dp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:layout_margin="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/css"
+                    android:text="Detail"
+                    android:padding="15dp"
+                    android:textStyle="bold"
+                    android:background="#DBDBDB"
+                    android:drawableBottom="@drawable/borderbottom"
+                    android:textColor="#000"
+                    />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_views"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clipToPadding="false"
+                    android:scrollbars="vertical"
+                    android:layout_below="@+id/css"
+                    android:layout_centerVertical="true"/>
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/komentar"
+        android:layout_alignParentBottom="true"
+        android:hint="Tulis Komentar..."
+        android:layout_toLeftOf="@+id/kirim"
+        android:background="#F0E7E7"
+        android:textColor="#000"
+        android:visibility="gone"
+        android:singleLine="true"
+        android:padding="13dp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:id="@+id/kirim"
+        android:text="Kirim"
+        android:visibility="gone"
+        android:textColor="#fff"
+        android:background="#009688"/>
+</RelativeLayout>

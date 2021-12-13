@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:background="@color/colorPrimary"
+    android:padding="20dp">
+
+    <ImageView
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:id="@+id/i"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logokonsul"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Masuk"
+        android:id="@+id/x"
+        android:layout_below="@+id/i"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/ijo"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Masuk dengan nomor HP yang terdaftar"
+        android:textColor="@color/white"
+        android:layout_below="@+id/x"
+        android:id="@+id/y"
+        android:textSize="14dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_below="@+id/y"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:text="Email/No Hp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView44"
+            android:textColor="@color/ijo"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:id="@+id/email" />
+
+        <TextView
+            android:text="Password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/passworddd"
+            android:layout_weight="0.05"
+            android:textColor="@color/ijo" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/password"
+            android:inputType="textPassword" />
+
+        <Button
+            android:text="LOGIN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnLogin"
+            android:textColor="@color/white"
+            android:background="@drawable/bulattombol"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/txt_push_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:gravity="center_horizontal"
+            android:text="xxx"
+            android:visibility="gone"
+            android:textColor="@color/colorPrimary"
+            android:textSize="26dp"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="Name"
+            android:ems="10"
+            android:visibility="gone"
+            android:id="@+id/editText24" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:text="Daftar Akun"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnRegister"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/ijo"
+        android:background="@drawable/bulatwarna"
+        android:layout_marginBottom="50dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dengan masuk atau mendaftar, anda menyetujui ketentuan layanan kami"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

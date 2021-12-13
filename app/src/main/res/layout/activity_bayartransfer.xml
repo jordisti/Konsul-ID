@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="#f0f0f0"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colormakan"
+        android:theme="@style/GalaxyZooThemeToolbarDarkOverflow"
+        app:popupTheme="@style/Theme.AppCompat.NoActionBar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_above="@+id/btnRegister"
+        android:layout_below="@+id/toolbar"
+        android:layout_height="match_parent">
+
+        <LinearLayout android:layout_width="match_parent"
+            android:background="#f0f0f0"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:layout_margin="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/cs"
+                    android:text="Konsultasi Dengan"
+                    android:padding="15dp"
+                    android:textStyle="bold"
+                    android:background="#DBDBDB"
+                    android:drawableBottom="@drawable/borderbottom"
+                    android:textColor="#000"
+                    />
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:id="@+id/backdrop"
+                    android:src="@drawable/logokonsul"
+                    android:padding="10dp"
+                    android:scaleType="fitCenter"
+                    android:layout_below="@+id/cs"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/nama"
+                    android:layout_below="@+id/cs"
+                    android:layout_toRightOf="@+id/backdrop"
+                    android:layout_marginLeft="10dp"
+                    android:padding="10dp"
+                    android:text="Dokter"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#000"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spesialis"
+                    android:layout_below="@+id/nama"
+                    android:layout_toRightOf="@+id/backdrop"
+                    android:layout_marginLeft="10dp"
+                    android:padding="10dp"
+                    android:text="spesialis"
+                    android:textColor="#7E7E7E"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:layout_margin="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/css"
+                    android:text="Biaya Konsultasi"
+                    android:padding="15dp"
+                    android:textStyle="bold"
+                    android:background="#DBDBDB"
+                    android:drawableBottom="@drawable/borderbottom"
+                    android:textColor="#000"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/biaya"
+                    android:layout_below="@+id/css"
+                    android:padding="15dp"
+                    android:text="Rp. 35.000"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:textAlignment="center"
+                    android:textColor="#FF5722"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/li"
+                android:background="#fff"
+                android:layout_margin="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Upload Bukti Transfer"
+                    android:textColor="#000"
+                    android:id="@+id/a"
+                    android:padding="15dp"
+                    android:textStyle="bold"
+                    android:background="#DBDBDB"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Transfer Ke-"
+                    android:textColor="#000"
+                    android:id="@+id/b"
+                    android:layout_below="@+id/a"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingRight="15dp"
+                    android:textSize="14dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="BCA 087728872 An. KonsulID"
+                    android:textColor="#000"
+                    android:id="@+id/c"
+                    android:layout_below="@+id/b"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingRight="15dp"
+                    android:textSize="14dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Mandiri 175788388299 An. KonsulID"
+                    android:textColor="#000"
+                    android:id="@+id/d"
+                    android:layout_below="@+id/c"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingRight="15dp"
+                    android:textSize="14dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Upload Bukti Pembayaran"
+                    android:layout_below="@+id/d"
+                    android:textColor="#000"
+                    android:id="@+id/cc"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingRight="15dp"
+                    android:textSize="14dp"/>
+
+                <ImageView
+                    android:id="@+id/ivAttachment"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_below="@+id/cc"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingRight="15dp"
+                    android:background="@android:drawable/ic_menu_upload" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#009688"
+        android:layout_alignParentBottom="true"
+        android:text="Konfirmasi Pembayaran"
+        android:textColor="@color/white"/>
+
+</RelativeLayout>
